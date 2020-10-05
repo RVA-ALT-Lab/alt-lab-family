@@ -76,3 +76,36 @@ function create_family_cpt() {
   $wp_rewrite->flush_rules();
 }
 add_action( 'init', 'create_family_cpt', 0 );
+
+
+
+
+//ACF SAVE and LOAD JSON
+add_filter('acf/settings/save_json', 'alt_family_json_save_point');
+ 
+function alt_family_json_save_point( $path ) {
+    
+    // update path
+    $path = get_stylesheet_directory() . '/acf-json';
+    // return
+    return $path;
+    
+}
+
+
+add_filter('acf/settings/load_json', 'alt_family_json_load_point');
+
+function alt_family_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    // append path
+    $paths[] = get_stylesheet_directory()  . '/acf-json';
+    
+    
+    // return
+    return $paths;
+    
+}
+
