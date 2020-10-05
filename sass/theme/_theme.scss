@@ -1,1 +1,127 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap');
+
+/*
+dark blue = #264653 
+lt blue = #457b9d
+red = #e63946
+pale = #e8ecef
+*/
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #264653;
+}
+
+h1 {
+	font-size: 6em;
+	font-weight: 800;
+	text-align: center;
+}
+
+h2 {
+	font-size: 4em;
+}
+
+p {
+	background-color: rgba(255, 255, 255, .85);
+	padding: 20px;
+}
+
+li {
+	font-size: 1em;
+}
+
+.header {
+	padding-top: 400px;
+	background-image: url(../imgs/factory.jpg);
+	background-position: center;
+}
+
+.family-stats{
+	background-color: #e8ecef;
+	height: 100vh;
+}
+
+.family {
+	margin-top: 30px;
+}
+
+.family-stats h1 {
+	font-size: 3em;
+	font-weight: 400;
+	text-shadow: none;
+	text-align: left;
+	color: #264653;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.family h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+/*.family:nth-of-type(odd){
+	background-color: #efefef;
+}*/
+
+
+
+img.person {
+	border-radius: 50%;
+	margin: 10px auto;
+	max-height: 150px;
+	display: block;
+	border: 3px solid #457b9d;
+}
+
+
+
+.week-1 {
+	padding: 400px 80px 80px 80px;
+	background-image: url('https://live.staticflickr.com/7562/15678219448_2d2468722e_h.jpg');
+	background-position: center;
+}
+
+.week-1 h1 {
+	color: #fff;
+	text-shadow: 2px 2px #264653; 
+}
+
+.choice a{
+	padding: 20px;
+	color: #000;
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: all .3s;
+}
+
+.choice a:hover {
+	background-color: #457b9d;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*half and half revisions*/
+
+.familty-stats {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.family-stats h3 {
+	margin-top: 25px;
+}
+
+.status-bar {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	margin: 10px 0 5px 0;
+}
