@@ -53,10 +53,15 @@ defined( 'ABSPATH' ) || exit;
 				</a>
 			</li>
 			<li>
-				<a href="#">Something</a>
+				<a href="#">
+					<img src="<?php echo get_template_directory_uri();?>/imgs/community.svg">
+					Resources
+				</a>
 			</li>
-			<li>
-				<a href="#">Other thing</a>
+			<li><a href="#">
+					<img src="<?php echo get_template_directory_uri();?>/imgs/question.svg">
+					Questions
+				</a>
 			</li>
 		</ul>
 
