@@ -12,11 +12,10 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header col-md-6 family-stats fixed-top">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php $family_id = get_field('family_association');?>
+		<h1 class="event-title"><?php echo get_the_title($family_id) ?></h1>
 		 <div class="row family">
 		 	<?php
-		 		$family_id = get_field('family_association');
 		 		
 		 		if( have_rows('family', $family_id) ):
 
@@ -54,6 +53,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="container-fluid article">
         <div class="row">                
             <div class="row offset-md-6">
+            	<?php the_title( '<h1 class="event-title">', '</h1>' ); ?>
 				<?php the_content(); ?>
 			</div>	
 		</div>			
