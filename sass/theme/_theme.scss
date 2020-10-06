@@ -41,6 +41,10 @@ li {
 .family-stats{
 	background-color: #e8ecef;
 	height: 100vh;
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .family {
@@ -109,6 +113,10 @@ img.person {
 }
 
 /*EVENT SPECIFIC*/
+article h1 {
+	margin: 20px auto;	
+}
+
 .family-stats h1.event-title {
 	margin-top: 50px;
 }
@@ -130,4 +138,36 @@ img.person {
 	width: 100%;
 	padding: 5px;
 	margin: 10px 0 5px 0;
+}
+
+/*resources*/
+
+ul#resources {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+#resources li {
+	width: calc(100% / 3);
+	text-align: center;
+	display: block;
+}
+
+#resources li img {
+	display: block;
+	margin: 0 auto;
+}
+
+/*FOOTER*/
+#wrapper-footer {
+	position: fixed;
+	bottom: 0;
+	display: block;
+	z-index: 9000;
 }

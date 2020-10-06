@@ -26,8 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
+						
 
 					</div><!-- .site-info -->
 

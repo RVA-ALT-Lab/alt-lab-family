@@ -42,9 +42,23 @@ defined( 'ABSPATH' ) || exit;
 				    // Do something...
 				endif;
 
-		 	?>
+		 	?>		 	
 
 		 </div>
+		 <ul id="resources">
+			<li>
+				<a href="map">
+					<img src="<?php echo get_template_directory_uri();?>/imgs/map.svg">
+					Map
+				</a>
+			</li>
+			<li>
+				<a href="#">Something</a>
+			</li>
+			<li>
+				<a href="#">Other thing</a>
+			</li>
+		</ul>
 
 	</header><!-- .entry-header -->
 
