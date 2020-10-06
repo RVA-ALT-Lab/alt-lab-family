@@ -83,33 +83,9 @@ img.person {
 }
 
 
-
-.week-1 {
-	padding: 400px 80px 80px 80px;
-	background-image: url('https://live.staticflickr.com/7562/15678219448_2d2468722e_h.jpg');
-	background-position: center;
-}
-
-.week-1 h1 {
-	color: #fff;
-	text-shadow: 2px 2px #264653; 
-}
-
-.choice a{
-	padding: 20px;
-	color: #000;
-	width: 100%;
-	height: auto;
-	display: block;
-	transition: all .3s;
-}
-
-.choice a:hover {
-	background-color: #457b9d;
-}
-
-.hidden {
-	display: none;
+article {
+	overflow: hidden;
+	padding: 50px;
 }
 
 /*EVENT SPECIFIC*/
@@ -148,15 +124,15 @@ ul#resources {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   position: absolute;
   bottom: 10px;
-  margin-left: 0;
+  margin: 10px auto;
   padding-left: 0;
 }
 
 #resources li {
-	width: calc(90% / 3);
+	width: calc(100% / 3);
 	text-align: center;
 	display: block;
 	transition: all .3s;
