@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header col-md-6 family-stats fixed-top">
 		<?php $family_id = get_field('family_association');?>
-		<h1 class="event-title"><?php echo get_the_title($family_id) ?></h1>
+		<h1 class="event-title">The <?php echo get_the_title($family_id) ?> Family</h1>
 		 <div class="row family">
 		 	<?php
 		 		
@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 				        //var_dump($img);
 				        echo '<div class="col-md-4">';
 				        echo '<img src="'. $img['sizes']['medium'] .'" class="parent person img-fluid" alt="real or no">';
-				        echo '<h2 class="family-member-name">' . $name . '</h2>';
+				        //echo '<h2 class="family-member-name">' . $name . '</h2>';//If we change our mind about the names
 				        echo '<div class="family-bio">' . $bio . '</div>';
 				        echo '</div>';
 				        // Do something...

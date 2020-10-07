@@ -150,6 +150,13 @@ ul#resources {
 	border: 2px solid #424242;
 }
 
+/*map template*/
+
+.full-width-map-page-wrapper {
+	background-image: url(../imgs/big-map.svg);
+	background-size: cover;
+}
+
 /*FOOTER*/
 #wrapper-footer {
 	position: fixed;
