@@ -152,9 +152,13 @@ ul#resources {
 
 /*map template*/
 
-.full-width-map-page-wrapper {
-	background-image: url(../imgs/big-map.svg);
-	background-size: cover;
+#full-width-map-page-wrapper {
+	background: url(../imgs/big-map.svg) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	height: 100vh;
 }
 
 /*FOOTER*/
