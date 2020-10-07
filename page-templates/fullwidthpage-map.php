@@ -21,6 +21,33 @@ if ( is_front_page() ) {
 <div class="wrapper" id="full-width-map-page-wrapper">
 
 	<div class="container-fluid" id="content">
+		<?php 
+		if( have_rows('locations') ):
+
+		    // Loop through rows.
+		    while( have_rows('locations') ) : the_row();
+
+		        // Load sub field value.
+		        $name = get_sub_field('location_title');
+		        $left = get_sub_field('left');
+		        $bottom = get_sub_field('bottom');
+		        $position = 'position:absolute;left:'.$left.'%;bottom:'.$bottom."%;";
+		        //var_dump($img);
+		        echo '<div class="map-location" style="'.$position.'">';
+		        echo '<h2>'.$name.'</h2>';
+		        echo '</div>';
+		        // Do something...
+
+		    // End loop.
+		    endwhile;
+
+		// No value.
+		else :
+		    // Do something...
+		endif;
+
+
+		?>
 
 		<div class="row">
 
