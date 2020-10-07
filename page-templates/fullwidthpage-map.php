@@ -31,9 +31,11 @@ if ( is_front_page() ) {
 		        $name = get_sub_field('location_title');
 		        $left = get_sub_field('left');
 		        $bottom = get_sub_field('bottom');
+		        $image = get_sub_field('icon');
 		        $position = 'position:absolute;left:'.$left.'%;bottom:'.$bottom."%;";
 		        //var_dump($img);
 		        echo '<div class="map-location" style="'.$position.'">';
+		        echo '<img src="' . $image['sizes']['thumbnail'] . '">';
 		        echo '<h2>'.$name.'</h2>';
 		        echo '</div>';
 		        // Do something...
