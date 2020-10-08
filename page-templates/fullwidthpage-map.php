@@ -29,17 +29,36 @@ if ( is_front_page() ) {
 
 		        // Load sub field value.
 		        $name = get_sub_field('location_title');
+		        $map_id = 'map_'.get_row_index();
 		        $left = get_sub_field('left');
 		        $bottom = get_sub_field('bottom');
 		        $image = get_sub_field('icon');
 		        $position = 'position:absolute;left:'.$left.'%;bottom:'.$bottom."%;";
 		        $details = get_sub_field('details');
-		        //var_dump($img);
+		        //map part
 		        echo '<div class="map-location" style="'.$position.'">';
 		        echo '<img src="' . $image['sizes']['thumbnail'] . '">';
-		        echo '<button data-toggle="popover" title="" data-content="'.$details.'"><h2>'.$name.'</h2></button>';
+		        echo '<button data-toggle="modal" data-target="#'.$map_id.'" class="trigger"><h2>'.$name.'</h2></button>';
 		        echo '</div>';
-		        // Do something...
+		        // modal part
+		        echo '<div class="modal fade" id="'.$map_id.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title">'.$name.'</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					       '.$details.'
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>';
 
 		    // End loop.
 		    endwhile;
