@@ -162,11 +162,32 @@ ul#resources {
 }
 
 .map-location {
+	width: 110px;
+}
+
+.map-location img{
 	width: 80px;
 	height: 80px;
-	border-radius: 50%;
 	border: 2px solid $primary;
+	border-radius: 50%;
+	// background-color: rgba(220,220,220,.2);
+	margin: 10px auto;
+	display: block;
 }
+
+.map-location button {
+	border: none;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	transition: .3s all;
+}
+
+.map-location button:hover h2 {
+	background-color: $primary;
+	color: #fff;
+}
+
 
 .map-location h2 {
 	font-size: .9em;
