@@ -33,10 +33,11 @@ if ( is_front_page() ) {
 		        $bottom = get_sub_field('bottom');
 		        $image = get_sub_field('icon');
 		        $position = 'position:absolute;left:'.$left.'%;bottom:'.$bottom."%;";
+		        $details = get_sub_field('details');
 		        //var_dump($img);
 		        echo '<div class="map-location" style="'.$position.'">';
 		        echo '<img src="' . $image['sizes']['thumbnail'] . '">';
-		        echo '<button data-toggle="popover" title="Popover title" data-content="And here\'s some amazing content. It\'s very engaging. Right?"><h2>'.$name.'</h2></button>';
+		        echo '<button data-toggle="popover" title="" data-content="'.$details.'"><h2>'.$name.'</h2></button>';
 		        echo '</div>';
 		        // Do something...
 
