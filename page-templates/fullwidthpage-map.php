@@ -36,7 +36,7 @@ if ( is_front_page() ) {
 		        //var_dump($img);
 		        echo '<div class="map-location" style="'.$position.'">';
 		        echo '<img src="' . $image['sizes']['thumbnail'] . '">';
-		        echo '<h2>'.$name.'</h2>';
+		        echo '<button data-toggle="popover" title="Popover title" data-content="And here\'s some amazing content. It\'s very engaging. Right?"><h2>'.$name.'</h2></button>';
 		        echo '</div>';
 		        // Do something...
 
