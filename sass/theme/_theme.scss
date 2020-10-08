@@ -32,10 +32,10 @@ li {
 	font-size: 1em;
 }
 
-.header {
-	padding-top: 400px;
-	background-image: url(../imgs/factory.jpg);
-	background-position: center;
+.back-button {
+	height: 30px;
+	width: 30px;
+	margin: 0 20px 0 0;
 }
 
 .family-stats{
@@ -181,9 +181,11 @@ ul#resources {
 	width: 100%;
 	text-align: center;
 	transition: .3s all;
+	background-color: none;
+	border: 2px solid $primary;
 }
 
-.map-location button:hover h2 {
+.map-location button:hover {
 	background-color: $primary;
 	color: #fff;
 }

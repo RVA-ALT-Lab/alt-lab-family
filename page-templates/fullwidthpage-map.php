@@ -38,7 +38,7 @@ if ( is_front_page() ) {
 		        //map part
 		        echo '<div class="map-location" style="'.$position.'">';
 		        echo '<img src="' . $image['sizes']['thumbnail'] . '">';
-		        echo '<button data-toggle="modal" data-target="#'.$map_id.'" class="trigger"><h2>'.$name.'</h2></button>';
+		        echo '<button data-toggle="modal" data-target="#'.$map_id.'" class="trigger">'.$name.'</button>';
 		        echo '</div>';
 		        // modal part
 		        echo '<div class="modal fade" id="'.$map_id.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

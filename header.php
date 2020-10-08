@@ -79,7 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
-				<button onclick="history.go(-1);">Back </button>
+				<button class="btn btn-primary" onclick="history.go(-1);"><img class="back-button" src="<?php echo get_template_directory_uri();?>/imgs/back.svg?>" alt="back button">Back </button>
 			<?php if ( 'container-fluid' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
