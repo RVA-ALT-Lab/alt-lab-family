@@ -66,17 +66,8 @@ defined( 'ABSPATH' ) || exit;
 		</ul>
 
 	</header><!-- .entry-header -->
+</article>
 
-
-
-	<div class="container-fluid article">
-        <div class="row">                
-            <div class="row offset-md-6">
-            	<?php the_title( '<h1 class="event-title">', '</h1>' ); ?>
-				<?php the_content(); ?>
-			</div>	
-		</div>			
-	</div>
 <footer class="entry-footer">
 
 	<?php understrap_entry_footer(); ?>

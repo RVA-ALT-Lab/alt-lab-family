@@ -37,6 +37,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 		
 
 		</div><!-- .row -->
+		
+        <div class="row">                
+            <div class="col-md-6 offset-md-6">
+            	<?php the_title( '<h1 class="event-title">', '</h1>' ); ?>
+				<?php the_content(); ?>
+			</div>	
+		</div>			
+
 
 	</div><!-- #content -->
 

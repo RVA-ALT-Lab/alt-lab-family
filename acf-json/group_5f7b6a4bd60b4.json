@@ -22,25 +22,6 @@
             "button_label": "Add a family member",
             "sub_fields": [
                 {
-                    "key": "field_5f7b6a6b90862",
-                    "label": "Name",
-                    "name": "name",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_5f7b6a7190863",
                     "label": "Bio Details",
                     "name": "bio_details",
@@ -103,5 +84,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1601928711
+    "modified": 1602169016
 }
