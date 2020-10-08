@@ -79,6 +79,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
+				<button onclick="history.go(-1);">Back </button>
 			<?php if ( 'container-fluid' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
