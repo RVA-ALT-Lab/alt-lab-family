@@ -24,11 +24,16 @@ defined( 'ABSPATH' ) || exit;
 
 				        // Load sub field value.
 				        $name = get_sub_field('name', $family_id);
-				        $bio = get_sub_field('bio_details', $family_id);
-				        $img = get_sub_field('bio_picture', $family_id);
+				          $bio = get_sub_field('bio_details');
+				        if(get_sub_field('bio_picture')){
+				        	 $img = get_sub_field('bio_picture')['sizes']['medium'];
+				        } else {
+				        	$img = get_template_directory_uri() . '/imgs/empty_profile.png';
+				        }
+				       
 				        //var_dump($img);
 				        echo '<div class="col-md-4">';
-				        echo '<img src="'. $img['sizes']['medium'] .'" class="parent person img-fluid" alt="real or no">';
+				        echo '<img src="'. $img .'" class="parent person img-fluid" alt="real or no">';
 				        //echo '<h2 class="family-member-name">' . $name . '</h2>';//If we change our mind about the names
 				        echo '<div class="family-bio">' . $bio . '</div>';
 				        echo '</div>';
