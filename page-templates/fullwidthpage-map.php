@@ -33,7 +33,7 @@ if ( is_front_page() ) {
 		        $left = get_sub_field('left');
 		        $bottom = get_sub_field('bottom');
 		        $image = get_sub_field('icon');
-		        $position = 'position:absolute;left:'.$left.'%;bottom:'.$bottom."%;";
+		        $position = 'position:fixed;left:'.$left.'%;bottom:'.$bottom."%;";
 		        $details = get_sub_field('details');
 		        //map part
 		        echo '<div class="map-location" style="'.$position.'">';
